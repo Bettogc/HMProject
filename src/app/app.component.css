@@ -1,0 +1,37 @@
+.toolbar {
+	background-color: #094787;
+	height: 90px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+
+.VH-centered-object {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginIcon {
+	font-size: 32px;
+	color: #E2EEF4;
+}
+
+.loginHover:hover > .loginIcon,
+.loginHover:hover > span  {
+	cursor: pointer;
+	color: #B7D6E6 !important;
+}
+
+.loginTitle {
+	font-weight: bolder;
+}
+
+.btn-login {
+	background-color: #094787;
+	color: #E2EEF4;
+	font-weight: bolder;
+}
