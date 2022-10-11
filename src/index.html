@@ -1,13 +1,58 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>REPORTES ANDON</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/KnitIcoIGSS.jpg">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>REPORTES ANDON</title>
+		<base href="/">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="assets/KnitIcoIGSS.jpg">
+	</head>
+	<body>
+
+		<div class="toolbar">
+			<div class="container ">
+			<div class="row">
+				<div class="col-10">
+					<img src="../assets/HOOSIERlogo.jpg">
+				</div>
+				<div class="col-2 VH-centered-object loginHover" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<i class="bi bi-person-fill loginIcon"></i>
+					<span class="text-light">Login</span>
+				</div>      
+			</div>
+			</div>
+		</div>
+
+		<div class="container" style="border: 2px solid red; margin-top: 90px;">
+			<div class="row">
+				<!-- App Ticket View -->
+				asdf
+				<app-tickets-andon></app-tickets-andon>
+			</div>
+		</div>
+
+		<!-- Login Form -->
+		<div class="offcanvas offcanvas-end p-4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title loginTitle" id="offcanvasNavbarLabel">INICIAR SESIÓN</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+
+				<form>
+					<div class="mb-3">
+						<label for="usernameLogin" class="form-label">Username</label>
+						<input type="email" class="form-control" id="usernameLogin" aria-describedby="emailHelp">
+					</div>
+					<div class="mb-3">
+						<label for="passwordLogin" class="form-label">Password</label>
+						<input type="password" class="form-control" id="passwordLogin">
+					</div>
+					<button type="submit" class="btn btn-login">INICIAR</button>
+				</form>
+
+			</div>
+		</div>
+		<!-- End Login Form -->
+	</body>
 </html>
